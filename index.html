@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day & Ross Global Consulting Solution</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
       background: url('bg.jpg') no-repeat center top;
       background-size: cover;
+      font-family: Arial, sans-serif;
       color: #f5cf66;
     }
 
@@ -19,79 +23,85 @@
       justify-content: center;
       gap: 2rem;
       padding: 1rem;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.5);
+      font-weight: bold;
     }
 
     nav a {
       color: #f5cf66;
       text-decoration: none;
-      font-weight: bold;
     }
 
-    .content {
+    header {
       text-align: center;
-      padding: 4rem 2rem 2rem;
-      background-color: rgba(0, 0, 0, 0.3);
+      padding: 4rem 1rem 2rem;
     }
 
     .title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
+      font-size: 2.6rem;
       color: #ffd84d;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      margin-bottom: 1rem;
     }
 
     .subtitle {
       font-size: 1.2rem;
-      color: #fff9dd;
-      margin-bottom: 2rem;
+      color: #fffce2;
+      margin-bottom: 1.5rem;
     }
 
-    .button {
-      background: transparent;
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 2rem;
       border: 2px solid #ffd84d;
-      padding: 0.8rem 2rem;
-      color: #ffd84d;
       border-radius: 10px;
-      text-decoration: none;
+      color: #ffd84d;
       font-weight: bold;
+      text-decoration: none;
+      background: transparent;
     }
 
     .cards {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 2rem;
+      flex-wrap: wrap;
       padding: 3rem 1rem;
     }
 
     .card {
-      background-color: rgba(0, 0, 0, 0.4);
-      color: white;
+      background: rgba(0,0,0,0.4);
+      color: #fff;
       border-radius: 12px;
       padding: 1.5rem;
       width: 260px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
     }
 
-    .ai-block {
-      background-color: rgba(0, 0, 0, 0.5);
-      margin: 2rem auto;
+    .ai-box {
+      background: rgba(0,0,0,0.5);
       max-width: 600px;
+      margin: 2rem auto;
       padding: 2rem;
       border-radius: 16px;
-      color: #fffddc;
+      color: #fff9cc;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.5);
     }
 
     footer {
+      background-color: #0a3057;
       text-align: center;
-      background-color: #0c2a4d;
-      padding: 1.5rem;
-      color: #ccc;
+      padding: 1.5rem 1rem;
       font-size: 0.85rem;
+      color: #ccc;
+    }
+
+    @media(max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -105,28 +115,28 @@
     <a href="#">HU / EN</a>
   </nav>
 
-  <div class="content">
+  <header>
     <div class="title">DAY & ROSS GLOBAL CONSULTING SOLUTION</div>
     <div class="subtitle">AI-alapú üzleti tanácsadás <strong>amerikai alapokon</strong></div>
-    <a class="button" href="#">MEGOLDÁSAINK</a>
-  </div>
+    <a href="#" class="cta-button">MEGOLDÁSAINK</a>
+  </header>
 
   <section class="cards">
     <div class="card">
       <h3>Üzleti tanácsadás</h3>
-      <p>A holnap döntései ma születnek</p>
+      <p>A holnap döntései<br>ma születnek</p>
     </div>
     <div class="card">
       <h3>AI-rendszerek</h3>
-      <p>Adatalapú stratégiák – emberi partnerekkel</p>
+      <p>Adatalapú stratégiák –<br>emberi partnerekkel</p>
     </div>
     <div class="card">
       <h3>Nemzetközi szállítmányozás</h3>
-      <p>Világszintű megoldás amerikai alapokon</p>
+      <p>Világszintű megoldás<br>amerikai alapokon</p>
     </div>
   </section>
 
-  <div class="ai-block">
+  <div class="ai-box">
     <h2>Üdvözlöm, Ross vagyok.</h2>
     <p>A jövőt formáló mesterséges intelligencia</p>
   </div>
