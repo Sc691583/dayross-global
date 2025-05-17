@@ -2,97 +2,95 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day & Ross Global Consulting Solution</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Cinzel', serif;
-      background-color: #1c5d99;
+      font-family: Arial, sans-serif;
+      background: url('bg.jpg') no-repeat center top;
+      background-size: cover;
       color: #f5cf66;
     }
 
     nav {
-      background-color: #114b85;
-      padding: 1rem 0;
       display: flex;
       justify-content: center;
       gap: 2rem;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
     }
 
     nav a {
       color: #f5cf66;
       text-decoration: none;
       font-weight: bold;
-      font-size: 0.95rem;
     }
 
-    header {
+    .content {
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 4rem 2rem 2rem;
+      background-color: rgba(0, 0, 0, 0.3);
     }
 
-    h1 {
-      font-size: 2.8rem;
-      color: #f5cf66;
-      text-shadow: 2px 2px 4px #00000088;
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
       margin-bottom: 1rem;
+      color: #ffd84d;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
     }
 
     .subtitle {
-      color: #ffeebc;
       font-size: 1.2rem;
+      color: #fff9dd;
+      margin-bottom: 2rem;
     }
 
     .button {
-      margin-top: 1.8rem;
-      padding: 0.7rem 2.2rem;
-      border: 2px solid #f5cf66;
-      color: #f5cf66;
-      background-color: transparent;
-      border-radius: 12px;
-      font-weight: bold;
-      font-size: 1rem;
+      background: transparent;
+      border: 2px solid #ffd84d;
+      padding: 0.8rem 2rem;
+      color: #ffd84d;
+      border-radius: 10px;
       text-decoration: none;
-      display: inline-block;
+      font-weight: bold;
     }
 
     .cards {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 2rem;
+      justify-content: center;
+      gap: 1.5rem;
       padding: 3rem 1rem;
     }
 
     .card {
-      background-color: #1761a0;
-      padding: 1.8rem;
-      border-radius: 14px;
-      color: #fff;
-      width: 240px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 260px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     }
 
     .ai-block {
-      max-width: 600px;
+      background-color: rgba(0, 0, 0, 0.5);
       margin: 2rem auto;
-      background-color: #134875;
-      border-radius: 16px;
+      max-width: 600px;
       padding: 2rem;
-      color: #fff8d6;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+      border-radius: 16px;
+      color: #fffddc;
       text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     }
 
     footer {
       text-align: center;
-      background-color: #0a3057;
-      color: #ddd;
-      padding: 1.5rem 1rem;
+      background-color: #0c2a4d;
+      padding: 1.5rem;
+      color: #ccc;
       font-size: 0.85rem;
     }
   </style>
@@ -104,32 +102,32 @@
     <a href="#">SZOLGÁLTATÁSAINK</a>
     <a href="#">AI-RENDSZER</a>
     <a href="#">KAPCSOLAT</a>
-    <a href="#">HU EN</a>
+    <a href="#">HU / EN</a>
   </nav>
 
-  <header>
-    <h1>DAY & ROSS GLOBAL CONSULTING SOLUTION</h1>
-    <p class="subtitle">AI-alapú üzleti tanácsadás és logisztikai stratégia globálisan</p>
+  <div class="content">
+    <div class="title">DAY & ROSS GLOBAL CONSULTING SOLUTION</div>
+    <div class="subtitle">AI-alapú üzleti tanácsadás <strong>amerikai alapokon</strong></div>
     <a class="button" href="#">MEGOLDÁSAINK</a>
-  </header>
+  </div>
 
-  <div class="cards">
+  <section class="cards">
     <div class="card">
       <h3>Üzleti tanácsadás</h3>
-      <p>A holnap döntései<br>ma születnek</p>
+      <p>A holnap döntései ma születnek</p>
     </div>
     <div class="card">
       <h3>AI-rendszerek</h3>
-      <p>Adatalapú stratégiák –<br>emberi partnerekkel</p>
+      <p>Adatalapú stratégiák – emberi partnerekkel</p>
     </div>
     <div class="card">
       <h3>Nemzetközi szállítmányozás</h3>
-      <p>Világszintű megoldás<br>amerikai alapokon</p>
+      <p>Világszintű megoldás amerikai alapokon</p>
     </div>
-  </div>
+  </section>
 
   <div class="ai-block">
-    <h2>Üdvözlöm Ross vagyok.</h2>
+    <h2>Üdvözlöm, Ross vagyok.</h2>
     <p>A jövőt formáló mesterséges intelligencia</p>
   </div>
 
