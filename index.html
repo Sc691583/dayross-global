@@ -6,16 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day & Ross Global Consulting Solution</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      background: url('bg.jpg') no-repeat center top;
+      background: url('assets/bg.png') no-repeat center top;
       background-size: cover;
-      font-family: Arial, sans-serif;
-      color: #f5cf66;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f8d060;
+      text-align: center;
     }
 
     nav {
@@ -23,84 +20,99 @@
       justify-content: center;
       gap: 2rem;
       padding: 1rem;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0,0,0,0.6);
       font-weight: bold;
     }
 
     nav a {
-      color: #f5cf66;
+      color: #f8d060;
       text-decoration: none;
     }
 
     header {
-      text-align: center;
-      padding: 4rem 1rem 2rem;
+      padding: 5rem 1rem 2rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     }
 
-    .title {
-      font-size: 2.6rem;
+    h1 {
+      font-size: 3.2rem;
       color: #ffd84d;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-      margin-bottom: 1rem;
+      letter-spacing: 2px;
     }
 
     .subtitle {
+      color: #fff7d0;
       font-size: 1.2rem;
-      color: #fffce2;
-      margin-bottom: 1.5rem;
+      margin-top: 1rem;
     }
 
-    .cta-button {
+    .cta {
+      margin-top: 2rem;
       display: inline-block;
-      padding: 0.75rem 2rem;
+      padding: 0.8rem 2rem;
       border: 2px solid #ffd84d;
-      border-radius: 10px;
+      border-radius: 12px;
       color: #ffd84d;
-      font-weight: bold;
       text-decoration: none;
-      background: transparent;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
-    .cards {
+    .cta:hover {
+      background: #ffd84d;
+      color: #003b65;
+    }
+
+    .services {
       display: flex;
       justify-content: center;
-      gap: 2rem;
       flex-wrap: wrap;
-      padding: 3rem 1rem;
+      gap: 2rem;
+      padding: 4rem 1rem;
     }
 
     .card {
-      background: rgba(0,0,0,0.4);
-      color: #fff;
-      border-radius: 12px;
-      padding: 1.5rem;
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
       width: 260px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      backdrop-filter: blur(4px);
+    }
+
+    .card h3 {
+      color: #fff;
+    }
+
+    .card p {
+      color: #f0f0f0;
     }
 
     .ai-box {
       background: rgba(0,0,0,0.5);
-      max-width: 600px;
       margin: 2rem auto;
       padding: 2rem;
-      border-radius: 16px;
-      color: #fff9cc;
-      text-align: center;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.5);
+      max-width: 620px;
+      border-radius: 20px;
+      color: #fffcd6;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     }
 
     footer {
       background-color: #0a3057;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 0.85rem;
       color: #ccc;
+      padding: 1.5rem;
+      font-size: 0.85rem;
     }
 
-    @media(max-width: 768px) {
-      .cards {
+    @media (max-width: 768px) {
+      .services {
         flex-direction: column;
         align-items: center;
+      }
+
+      h1 {
+        font-size: 2.2rem;
       }
     }
   </style>
@@ -109,30 +121,30 @@
 
   <nav>
     <a href="#">BEMUTATKOZÁS</a>
-    <a href="#">SZOLGÁLTATÁSAINK</a>
+    <a href="#">SZOLGÁLTATÁSOK</a>
     <a href="#">AI-RENDSZER</a>
     <a href="#">KAPCSOLAT</a>
     <a href="#">HU / EN</a>
   </nav>
 
   <header>
-    <div class="title">DAY & ROSS GLOBAL CONSULTING SOLUTION</div>
-    <div class="subtitle">AI-alapú üzleti tanácsadás <strong>amerikai alapokon</strong></div>
-    <a href="#" class="cta-button">MEGOLDÁSAINK</a>
+    <h1>DAY & ROSS GLOBAL CONSULTING SOLUTION</h1>
+    <p class="subtitle">AI-alapú üzleti tanácsadás amerikai alapokon</p>
+    <a href="#" class="cta">MEGOLDÁSAINK</a>
   </header>
 
-  <section class="cards">
+  <section class="services">
     <div class="card">
       <h3>Üzleti tanácsadás</h3>
-      <p>A holnap döntései<br>ma születnek</p>
+      <p>A holnap döntései ma születnek</p>
     </div>
     <div class="card">
       <h3>AI-rendszerek</h3>
-      <p>Adatalapú stratégiák –<br>emberi partnerekkel</p>
+      <p>Adatalapú stratégiák emberi partnerekkel</p>
     </div>
     <div class="card">
       <h3>Nemzetközi szállítmányozás</h3>
-      <p>Világszintű megoldás<br>amerikai alapokon</p>
+      <p>Világszintű megoldás amerikai alapokon</p>
     </div>
   </section>
 
